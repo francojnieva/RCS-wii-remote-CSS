@@ -12,99 +12,199 @@ main {
     align-items: center;
 }
 
-
 .section-container {
-    width: 25%;
     border-radius: 1.5rem;
-    background-color: #f1f1f1f1;
-    box-shadow: inset 0 0 12px 8px lightgray;
-    margin-top: 2rem;
-}
-
-.section__icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2rem;
+    background-color: #f7f7f7;
+    box-shadow: inset 0 0 12px 8px rgb(219, 219, 219);
 }
 
 .section__icons .power {
-    text-align: center;
-    margin-left: 2rem; 
     font-weight: 600;
-}
-
-.section__icons .power img {
-    width: 65%;
+    text-align: center;
 }
 
 .section__icons .logo-rolling {
-    width: 18%;
-    margin-right: 2rem;
-}
-
-.section__icons .logo-rolling img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.section__btnA {
-    display: flex;
-    justify-content: center;
-}
-
-.section__btnLessHomeMore {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-}
-
-.section__btnLessHomeMore button {
-    margin: 1rem 0rem;
-    font-size: 1rem;
-    padding: .5rem;
-    font-weight: 600;
-    border-radius: 50%;
-    border:  none;
-    box-shadow: inset 0px -3px 6px 1px gray;
-}
-
-.section__btnLessHomeMore .more {
-    padding: .5rem 1.2rem;
-}
-
-.section__btnLessHomeMore .less {
-    padding: .5rem 1.2rem;
+    text-align: center;
 }
 
 .btnAOneTwo {
-    margin: 1rem 0rem;
     font-size: 1rem;
-    padding: .8rem 1.1rem;
     font-weight: 600;
     border-radius: 50%;
     border:  none;
-    box-shadow: inset 3px 0 6px 1px gray;
+    box-shadow: inset 3px 0px 4px 1px rgb(119, 119, 119);
 }
 
-.btnA {
-    padding: 1.5rem 1.8rem;
+.section__btnLessHomeMore button {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50%;
+    border:  none;
+    box-shadow: inset 0px -3px 6px 1px rgb(119, 119, 119);
 }
 
-.section__btnOneTwo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1.5rem 0rem;
+.section__speaker .speak {
+    background-color: black;
 }
 
-.section__logoWii {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
+.section__lights .led {
+    background-color: rgb(1, 100, 100);
 }
 
-.section__logoWii img {
-    width: 22%;
+.section__lights .default {
+    background-color: aqua;
+    border: .1rem solid aqua;
 }
+
+@media screen and (min-width: 320px) {
+    .section-container {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    .section__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+
+    .section__icons .power {
+        margin-left: 1.2rem;
+    }
+
+    .section__icons .power img {
+        width: 45%;
+    }
+
+    .section__icons .logo-rolling {
+        width: 27%;
+        margin-top: -.8rem;
+        margin-right: 1rem;
+    }
+
+    .section__icons .logo-rolling img {
+       width: 100%;
+    }
+
+    .section__btnA {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section__btnA .btnA {
+        padding: 1.2rem 1.7rem;
+        font-size: 1.3rem;
+    }
+
+    .btnAOneTwo {
+        margin: 1rem 0rem;
+        padding: .8rem 1.1rem;
+    }
+
+    .section__btnLessHomeMore {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+
+    .section__btnLessHomeMore button {
+        margin: 1rem 0rem;
+        padding: .3rem;
+    }
+
+    .section__btnLessHomeMore .more, .section__btnLessHomeMore .less {
+        padding: .5rem 1.2rem;
+    }
+
+    .section__btnOneTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.5rem 0rem;
+    }
+
+    .section__speaker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .section__speaker .line {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section__speaker .speak {
+        margin: 0.5rem .6rem;
+    }
+
+    .section__speaker .line1 {
+        width: .2rem;
+        height: .2rem;
+    }
+
+    .section__speaker .line2 {
+        width: .2rem;
+        height: .3rem;
+    }
+
+    .section__speaker .line3 {
+        width: .2rem;
+        height: .4rem;
+    }
+
+    .section__speaker .line4 {
+        width: .2rem;
+        height: .4rem;
+    }
+
+    .section__speaker .line5 {
+        width: .2rem;
+        height: .3rem;
+    }
+
+    .section__speaker .line6 {
+        width: .2rem;
+        height: .2rem;
+    }
+
+    .section__lights {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 0rem .5rem;
+    }
+
+    .section__lights .led {
+        width: .5rem;
+        height: .5rem;
+    }
+
+    .section__logoWii {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .section__logoWii img {
+        width: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
