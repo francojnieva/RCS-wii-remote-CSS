@@ -27,12 +27,32 @@ main {
     text-align: center;
 }
 
+.section__controlpad .select {
+    border-radius: .3rem;
+    border: 0.1rem solid rgb(214, 214, 214);
+    background-color: #f7f7f7;
+}
+
+.section__controlpad .vertical {
+    transform: rotate(90deg);
+    box-shadow: inset 0px 3px 3px 1px rgb(167, 167, 167);
+}
+
+.section__controlpad .horizontal {
+    box-shadow: inset 0px -1px 3px 1px rgb(167, 167, 167);
+}
+
 .btnAOneTwo {
     font-size: 1rem;
     font-weight: 600;
     border-radius: 50%;
     border:  none;
-    box-shadow: inset 3px 0px 4px 1px rgb(119, 119, 119);
+    box-shadow: inset 2px 0px 2px 1px rgb(158, 158, 158);
+    transition: .4s;
+}
+
+.btnAOneTwo:active {
+    transform: translateY(.5rem);
 }
 
 .section__btnLessHomeMore button {
@@ -40,7 +60,12 @@ main {
     font-weight: 600;
     border-radius: 50%;
     border:  none;
-    box-shadow: inset 0px -3px 6px 1px rgb(119, 119, 119);
+    box-shadow: inset 0px -3px 4px 1px rgb(158, 158, 158);
+    transition: .4s;
+}
+
+.section__btnLessHomeMore button:active {
+    transform: translateY(.5rem);
 }
 
 .section__speaker .speak {
@@ -91,6 +116,24 @@ main {
 
     .section__icons .logo-rolling img {
        width: 100%;
+    }
+
+    .section__controlpad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0rem;
+    }
+
+    .section__controlpad .vertical {
+        width: 6.5rem;
+        height: 2rem;
+    }
+
+    .section__controlpad .horizontal {
+        position: absolute;
+        width: 6.5rem;
+        height: 2rem;
     }
 
     .section__btnA {
