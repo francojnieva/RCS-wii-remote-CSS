@@ -1,5 +1,6 @@
 # Control Remoto Wii ✨
 Este repositorio contiene mi solución al trabajo práctico de Rolling Code School, donde se nos pidió realizar una copia del control remoto de Wii utilizando CSS puro o vanilla.
+Puedes verlo a través del siguiente enlace: [https://remote-control-wii.netlify.app](https://remote-control-wii.netlify.app)
 
 ## Descripción
 El objetivo de este proyecto fue recrear una réplica visualmente precisa del control remoto de Wii utilizando únicamente CSS puro. Se adjunta una imagen de referencia del control remoto que debíamos copiar: 
